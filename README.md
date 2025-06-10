@@ -60,3 +60,48 @@ FROM sales
 ORDER BY sales_date;
 ```
 
+## Quick Reference
+
+### SQL Command Categories
+```sql
+-- Data Query Language (DQL)
+SELECT, FROM, WHERE, GROUP BY, HAVING, ORDER BY
+
+-- Data Manipulation Language (DML)
+INSERT, UPDATE, DELETE, MERGE
+
+-- Data Definition Language (DDL)
+CREATE, ALTER, DROP, TRUNCATE, RENAME
+
+-- Data Control Language (DCL)
+GRANT, REVOKE
+
+-- Transaction Control Language (TCL)
+COMMIT, ROLLBACK, SAVEPOINT
+```
+
+### Common Patterns
+
+```sql
+-- Basic Query Structure
+SELECT column1, column2
+FROM table_name
+WHERE condition
+GROUP BY column1
+HAVING group_condition
+ORDER BY column1;
+
+-- JOIN Pattern
+SELECT t1.column, t2.column
+FROM table1 t1
+[JOIN TYPE] JOIN table2 t2 
+    ON t1.id = t2.foreign_id
+[WHERE additional_conditions];
+
+```
+
+### License
+```
+This project is licensed under the MIT License .
+```
+
