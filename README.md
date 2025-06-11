@@ -11,8 +11,8 @@ This repository serves as:
 ## Getting Started
 
 ### Prerequisites
-- SQL database system (MySQL, PostgreSQL, SQL Server, SQLite)
-- Database management tool (MySQL Workbench, pgAdmin, DBeaver)
+- SQL database system (MySQL, SQL Server, SQLite)
+- Database management tool (MySQL Workbench )
 
 ### Installation
 1. Clone the repository:
@@ -28,6 +28,12 @@ git clone https://github.com/priyanshusingh017/SQL-Queries.git
    SOURCE 05-Database-Setup/sample-schema.sql;
    SOURCE 05-Database-Setup/sample-data.sql;
    ```
+## Resource 
+```
+  1. Vs Code 
+  2. Use online mysql compiler ( one complier  , W3schools or many more )
+```
+
 ## Sample Queries
 
 ### Basic Example
