@@ -28,11 +28,23 @@ git clone https://github.com/priyanshusingh017/SQL-Queries.git
    SOURCE 05-Database-Setup/sample-schema.sql;
    SOURCE 05-Database-Setup/sample-data.sql;
    ```
-## Resource 
-```
-  1. Vs Code 
-  2. Use online mysql compiler ( one complier  , W3schools or many more )
-```
+   
+## 🛠️ Resources
+
+### **Editors/IDEs**
+- [VS Code](https://code.visualstudio.com/) (with [SQL extensions](https://marketplace.visualstudio.com/items?itemName=mtxr.sqltools))
+- [MySQL Workbench](https://www.mysql.com/products/workbench/) (Official MySQL GUI)
+
+### **Online Compilers**
+- [OneCompiler](https://onecompiler.com/mysql) - Quick MySQL online editor
+- [W3Schools TrySQL](https://www.w3schools.com/sql/trysql.asp?filename=trysql_select_all) - Interactive SQL playground
+- [DB Fiddle](https://www.db-fiddle.com/) - Supports multiple SQL variants
+- [SQLize](https://sqlize.online/) - Collaborative SQL editor
+
+### **Practice Platforms**
+- [LeetCode SQL 50](https://leetcode.com/studyplan/top-sql-50/) - Curated list of 50 SQL problems
+- [HackerRank SQL](https://www.hackerrank.com/domains/sql) - SQL challenges with difficulty levels
+
 
 ## Sample Queries
 
@@ -106,8 +118,40 @@ FROM table1 t1
 
 ```
 
-### License
-```
-This project is licensed under the MIT License .
-```
+## 🏆 Practice Resources
 
+### **Recommended Study Path**
+
+| Level       | Resources                                                                 | Focus Area                          |
+|-------------|---------------------------------------------------------------------------|-------------------------------------|
+| **Beginner**  | [W3Schools SQL](https://www.w3schools.com/sql/) → [LeetCode Easy](https://leetcode.com/problemset/database/?difficulty=EASY) | Basic syntax, simple queries        |
+| **Intermediate** | [SQLZoo](https://sqlzoo.net/) → [LeetCode Medium](https://leetcode.com/problemset/database/?difficulty=MEDIUM) | Joins, subqueries, aggregation      |
+| **Advanced**   | [StrataScratch](https://www.stratascratch.com/) → [LeetCode Hard](https://leetcode.com/problemset/database/?difficulty=HARD) | Optimization, window functions, CTEs |
+
+
+## 📜 License
+
+This project is licensed under the [MIT License](LICENSE.md)
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+## 🤝 Contributing
+
+We welcome contributions from the community! Here's how you can help:
+
+1. **Fork** the repository
+   
+2. **Create** your feature branch:
+   
+   ```bash
+   git checkout -b feature/AmazingFeature
+   ```
+3. Commit your changes:
+   ```
+   git commit -m 'Add some AmazingFeature'
+   ```
+5. Push to the branch:
+   ```
+   git push origin feature/AmazingFeature
+   ```
+6. Open a Pull Request
