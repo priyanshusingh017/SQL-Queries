@@ -1,54 +1,62 @@
-# SQL Queries 
-A comprehensive collection of SQL queries from basic to advanced levels, designed to help developers, data analysts, and database enthusiasts master SQL.
+## SQL Queries Collection
+Curated SQL examples from beginner to advanced levels. This repository helps developers, analysts, and students practice core SQL concepts, study common patterns, and reference idiomatic solutions to real problems (including LeetCode SQL-50–style tasks).
 
-## About
-This repository serves as:
-- A practice resource for SQL learners
-- A reference guide for common SQL operations
-- A collection of interview-ready SQL queries
-- A demonstration of various SQL concepts and techniques
+## What’s Inside
+- Practice-ready `.sql` scripts organized by topic and difficulty
+- Coverage of selects, joins, aggregations, subqueries, and window functions
+- Clear patterns and snippets you can adapt in interviews and projects
+- Resources for editors, online playgrounds, and structured learning paths
+
+## Repository Structure
+- Org database in SQL/ — Organization-themed SQL scripts
+- Practice/ — Misc practice exercises (e.g., classroom scenarios)
+- SQL-50/ — Topic-wise solutions inspired by “SQL 50” practice sets
+   - select/
+   - basics join/
+   - Basic Aggregate Functions/
+   - Sorting and Grouping/
+   - Advanced Select and Joins/
+   - Subqueries/
+
+Note: Scripts target common SQL dialects. Most examples follow MySQL-style syntax; minor adjustments may be required for PostgreSQL, SQL Server, or SQLite (e.g., `LIMIT` vs `TOP`, date formatting functions, string functions).
 
 ## Getting Started
 
 ### Prerequisites
-- SQL database system (MySQL, SQL Server, SQLite)
-- Database management tool (MySQL Workbench )
+- A SQL database system (e.g., MySQL, PostgreSQL, SQL Server, SQLite)
+- An editor or client:
+   - VS Code with SQL tools (e.g., SQLTools)
+   - MySQL Workbench or a similar database client
+   - Any online SQL playground (see Resources)
 
-### Installation
-1. Clone the repository:
+### Clone the Repository
 ```bash
 git clone https://github.com/priyanshusingh017/SQL-Queries.git
+cd SQL-Queries
 ```
-2. Navigate to the project directory:
+
+## Running Queries
+Choose one of the workflows below:
+
+- MySQL Workbench (or GUI): Open any `.sql` file, connect to your database, and run the script.
+
+- VS Code (SQLTools):
+   1. Install the “SQLTools” extension and configure a connection.
+   2. Open a `.sql` file and execute the current statement or file.
+
+- CLI (MySQL example):
    ```bash
-   cd SQL-Queries
+   # Run an entire script against a database
+   mysql -u <user> -p <database_name> < path/to/script.sql
    ```
-3. Set up sample database (optional):
-   ```
-   SOURCE 05-Database-Setup/sample-schema.sql;
-   SOURCE 05-Database-Setup/sample-data.sql;
-   ```
-   
-## 🛠️ Resources
 
-### **Editors/IDEs**
-- [VS Code](https://code.visualstudio.com/) (with [SQL extensions](https://marketplace.visualstudio.com/items?itemName=mtxr.sqltools))
-- [MySQL Workbench](https://www.mysql.com/products/workbench/) (Official MySQL GUI)
+Tips:
+- Some practice scripts assume certain tables; many files include the necessary DDL at the top. If not, adapt to your schema or create small temp tables for testing.
+- For non-MySQL databases, adjust minor syntax differences as needed.
 
-### **Online Compilers**
-- [OneCompiler](https://onecompiler.com/mysql) - Quick MySQL online editor
-- [W3Schools TrySQL](https://www.w3schools.com/sql/trysql.asp?filename=trysql_select_all) - Interactive SQL playground
-- [DB Fiddle](https://www.db-fiddle.com/) - Supports multiple SQL variants
-- [SQLize](https://sqlize.online/) - Collaborative SQL editor
+## Sample Snippets
 
-### **Practice Platforms**
-- [LeetCode SQL 50](https://leetcode.com/studyplan/top-sql-50/) - Curated list of 50 SQL problems
-- [HackerRank SQL](https://www.hackerrank.com/domains/sql) - SQL challenges with difficulty levels
-
-
-## Sample Queries
-
-### Basic Example
+Basic
 ```sql
 -- Find employees with salary > 50000
 SELECT employee_id, first_name, last_name, salary
@@ -56,31 +64,33 @@ FROM employees
 WHERE salary > 50000
 ORDER BY salary DESC;
 ```
-### Intermediate Example
+
+Intermediate
 ```sql
 -- Average salary by department
 SELECT d.department_name, 
-       COUNT(e.employee_id) AS employee_count,
-       AVG(e.salary) AS avg_salary
+          COUNT(e.employee_id) AS employee_count,
+          AVG(e.salary) AS avg_salary
 FROM departments d
 JOIN employees e ON d.department_id = e.department_id
 GROUP BY d.department_name
 HAVING AVG(e.salary) > 45000;
 ```
-### Advanced Example
+
+Advanced
 ```sql
 -- Running total with window functions
 SELECT 
-    sales_date,
-    sales_amount,
-    SUM(sales_amount) OVER (ORDER BY sales_date) AS running_total
+      sales_date,
+      sales_amount,
+      SUM(sales_amount) OVER (ORDER BY sales_date) AS running_total
 FROM sales
 ORDER BY sales_date;
 ```
 
 ## Quick Reference
 
-### SQL Command Categories
+SQL Command Categories
 ```sql
 -- Data Query Language (DQL)
 SELECT, FROM, WHERE, GROUP BY, HAVING, ORDER BY
@@ -98,8 +108,7 @@ GRANT, REVOKE
 COMMIT, ROLLBACK, SAVEPOINT
 ```
 
-### Common Patterns
-
+Common Patterns
 ```sql
 -- Basic Query Structure
 SELECT column1, column2
@@ -113,44 +122,47 @@ ORDER BY column1;
 SELECT t1.column, t2.column
 FROM table1 t1
 [JOIN TYPE] JOIN table2 t2 
-    ON t1.id = t2.foreign_id
+   ON t1.id = t2.foreign_id
 [WHERE additional_conditions];
-
 ```
 
-## 🏆 Practice Resources
+## Learning Path
+- Beginner: W3Schools SQL → LeetCode Easy
+- Intermediate: SQLZoo → LeetCode Medium
+- Advanced: StrataScratch → LeetCode Hard, focus on window functions and CTEs
 
-### **Recommended Study Path**
+Helpful Platforms
+- LeetCode SQL 50 — curated practice set
+- HackerRank SQL — graduated difficulty challenges
 
-| Level       | Resources                                                                 | Focus Area                          |
-|-------------|---------------------------------------------------------------------------|-------------------------------------|
-| **Beginner**  | [W3Schools SQL](https://www.w3schools.com/sql/) → [LeetCode Easy](https://leetcode.com/problemset/database/?difficulty=EASY) | Basic syntax, simple queries        |
-| **Intermediate** | [SQLZoo](https://sqlzoo.net/) → [LeetCode Medium](https://leetcode.com/problemset/database/?difficulty=MEDIUM) | Joins, subqueries, aggregation      |
-| **Advanced**   | [StrataScratch](https://www.stratascratch.com/) → [LeetCode Hard](https://leetcode.com/problemset/database/?difficulty=HARD) | Optimization, window functions, CTEs |
+## Tools & Resources
 
+Editors / IDEs
+- VS Code (consider SQLTools)
+- MySQL Workbench (official MySQL GUI)
 
-## 📜 License
+Online Playgrounds
+- OneCompiler (MySQL)
+- W3Schools TrySQL
+- DB Fiddle (multiple dialects)
+- SQLize (collaborative editor)
 
-This project is licensed under the MIT License . 
+## Contributing
+Contributions are welcome!
+1) Fork the repo
+2) Create a feature branch
+```bash
+git checkout -b feature/your-feature
+```
+3) Commit your changes
+```bash
+git commit -m "Describe your change"
+```
+4) Push and open a Pull Request
+```bash
+git push origin feature/your-feature
+```
+
+## License
+This project is available under the MIT License.
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-
-## 🤝 Contributing
-
-We welcome contributions from the community! Here's how you can help:
-
-1. **Fork** the repository
-   
-2. **Create** your feature branch:
-   
-   ```bash
-   git checkout -b feature/AmazingFeature
-   ```
-3. Commit your changes:
-   ```
-   git commit -m 'Add some AmazingFeature'
-   ```
-5. Push to the branch:
-   ```
-   git push origin feature/AmazingFeature
-   ```
-6. Open a Pull Request
