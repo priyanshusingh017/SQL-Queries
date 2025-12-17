@@ -1,16 +1,29 @@
 ## SQL Queries Collection
-Curated SQL examples from beginner to advanced levels. This repository helps developers, analysts, and students practice core SQL concepts, study common patterns, and reference idiomatic solutions to real problems (including LeetCode SQL-50–style tasks).
+Practice-ready SQL queries from beginner to advanced—covering selects, joins, aggregates, subqueries, and window functions; includes SQL-50–style tasks.
 
-## What’s Inside
+## Table of Contents
+- [What's Inside](#whats-inside)
+- [Repository Structure](#repository-structure)
+- [Getting Started](#getting-started)
+- [Running Queries](#running-queries)
+- [Dialect Notes](#dialect-notes)
+- [Sample Snippets](#sample-snippets)
+- [Quick Reference](#quick-reference)
+- [Learning Path](#learning-path)
+- [Tools & Resources](#tools--resources)
+- [SQL-50 Guide](#sql-50-guide)
+- [Contributing](#contributing)
+- [License](#license)
+
+## What's Inside
 - Practice-ready `.sql` scripts organized by topic and difficulty
 - Coverage of selects, joins, aggregations, subqueries, and window functions
 - Clear patterns and snippets you can adapt in interviews and projects
 - Resources for editors, online playgrounds, and structured learning paths
 
 ## Repository Structure
-- Org database in SQL/ — Organization-themed SQL scripts
-- Practice/ — Misc practice exercises (e.g., classroom scenarios)
-- SQL-50/ — Topic-wise solutions inspired by “SQL 50” practice sets
+- [Org database in SQL/](Org%20database%20in%20SQL) — Organization-themed SQL scripts
+- [SQL-50/](SQL-50) — Topic-wise solutions inspired by “SQL 50” practice sets
    - select/
    - basics join/
    - Basic Aggregate Functions/
@@ -53,6 +66,12 @@ Choose one of the workflows below:
 Tips:
 - Some practice scripts assume certain tables; many files include the necessary DDL at the top. If not, adapt to your schema or create small temp tables for testing.
 - For non-MySQL databases, adjust minor syntax differences as needed.
+
+## Dialect Notes
+- Row limiting: `LIMIT n` (MySQL/PostgreSQL) vs `TOP n` (SQL Server)
+- Null handling: `IFNULL` (MySQL) vs `COALESCE` (ANSI)
+- Date/time: `DATE_FORMAT` vs `TO_CHAR`, `DATEDIFF` semantics differ
+- Strings: `CONCAT()` vs `||` (PostgreSQL/SQLite)
 
 ## Sample Snippets
 
@@ -131,7 +150,7 @@ FROM table1 t1
 - Intermediate: SQLZoo → LeetCode Medium
 - Advanced: StrataScratch → LeetCode Hard, focus on window functions and CTEs
 
-Helpful Platforms
+### Helpful Platforms
 - LeetCode SQL 50 — curated practice set
 - HackerRank SQL — graduated difficulty challenges
 
@@ -146,6 +165,9 @@ Online Playgrounds
 - W3Schools TrySQL
 - DB Fiddle (multiple dialects)
 - SQLize (collaborative editor)
+
+## SQL-50 Guide
+- See the focused guide and index at [SQL-50/Readme.md](SQL-50/Readme.md)
 
 ## Contributing
 Contributions are welcome!
@@ -164,5 +186,5 @@ git push origin feature/your-feature
 ```
 
 ## License
-This project is available under the MIT License.
+This project is available under the MIT License. See [LICENSE](LICENSE) for details.
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
