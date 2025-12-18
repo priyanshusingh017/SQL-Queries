@@ -10,8 +10,6 @@ Curated SQL exercises organized by topic and difficulty, inspired by popular SQL
 - [How to Run](#how-to-run)
 - [Problem Sets by Topic](#problem-sets-by-topic)
 - [Conventions and Dialect Notes](#conventions-and-dialect-notes)
-- [Contributing](#contributing)
-- [License](#license)
 
 ## Overview
 - Focus: Core relational SQL skills used in interviews and daily analytics work.

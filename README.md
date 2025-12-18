@@ -12,6 +12,7 @@ Practice-ready SQL queries from beginner to advanced—covering selects, joins, 
 - [Learning Path](#learning-path)
 - [Tools & Resources](#tools--resources)
 - [SQL-50 Guide](#sql-50-guide)
+- [Org DB Guide](#org-db-guide)
 - [Contributing](#contributing)
 - [License](#license)
 
@@ -24,14 +25,14 @@ Practice-ready SQL queries from beginner to advanced—covering selects, joins, 
 ## Repository Structure
 - [Org database in SQL/](Org%20database%20in%20SQL) — Organization-themed SQL scripts
 - [SQL-50/](SQL-50) — Topic-wise solutions inspired by “SQL 50” practice sets
-   - select/
-   - basics join/
-   - Basic Aggregate Functions/
-   - Sorting and Grouping/
-   - Advanced Select and Joins/
-   - Subqueries/
+   - [SQL-50/select](SQL-50/select)
+   - [SQL-50/basics join](SQL-50/basics%20join)
+   - [SQL-50/Basic Aggregate Functions](SQL-50/Basic%20Aggregate%20Functions)
+   - [SQL-50/Sorting and Grouping](SQL-50/Sorting%20and%20Grouping)
+   - [SQL-50/Advanced Select and Joins](SQL-50/Advanced%20Select%20and%20Joins)
+   - [SQL-50/Subqueries](SQL-50/Subqueries)
 
-Note: Scripts target common SQL dialects. Most examples follow MySQL-style syntax; minor adjustments may be required for PostgreSQL, SQL Server, or SQLite (e.g., `LIMIT` vs `TOP`, date formatting functions, string functions).
+> Note: Scripts target common SQL dialects. Most examples follow MySQL-style syntax; minor adjustments may be required for PostgreSQL, SQL Server, or SQLite (e.g., `LIMIT` vs `TOP`, date formatting functions, string functions).
 
 ## Getting Started
 
@@ -63,7 +64,7 @@ Choose one of the workflows below:
    mysql -u <user> -p <database_name> < path/to/script.sql
    ```
 
-Tips:
+> Tips:
 - Some practice scripts assume certain tables; many files include the necessary DDL at the top. If not, adapt to your schema or create small temp tables for testing.
 - For non-MySQL databases, adjust minor syntax differences as needed.
 
@@ -168,6 +169,9 @@ Online Playgrounds
 
 ## SQL-50 Guide
 - See the focused guide and index at [SQL-50/Readme.md](SQL-50/Readme.md)
+
+## Org DB Guide
+- See the schema, setup, and exercises at [Org database in SQL/Readme.md](Org%20database%20in%20SQL/Readme.md)
 
 ## Contributing
 Contributions are welcome!
