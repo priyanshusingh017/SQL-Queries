@@ -5,11 +5,13 @@ Curated SQL exercises organized by topic and difficulty, inspired by popular SQL
 > Note: This collection is for learning and practice. It is not affiliated with or endorsed by any third-party platform.
 
 ## Contents
-- Overview and goals
-- Folder structure
-- How to run
-- Problem sets by topic (links to scripts)
-- Conventions and dialect notes
+- [Overview](#overview)
+- [Folder Structure](#folder-structure)
+- [How to Run](#how-to-run)
+- [Problem Sets by Topic](#problem-sets-by-topic)
+- [Conventions and Dialect Notes](#conventions-and-dialect-notes)
+- [Contributing](#contributing)
+- [License](#license)
 
 ## Overview
 - Focus: Core relational SQL skills used in interviews and daily analytics work.
@@ -51,53 +53,54 @@ Tips:
 ## Problem Sets by Topic
 
 ### select/
-- [select/leetcode1148.sql](select/leetcode1148.sql)
-- [select/leetcode1683.sql](select/leetcode1683.sql)
-- [select/leetcode1757.sql](select/leetcode1757.sql)
-- [select/leetcode584.sql](select/leetcode584.sql)
-- [select/leetcode595.sql](select/leetcode595.sql)
+1. [select/leetcode1148.sql](select/leetcode1148.sql)
+2. [select/leetcode1683.sql](select/leetcode1683.sql)
+3. [select/leetcode1757.sql](select/leetcode1757.sql)
+4. [select/leetcode584.sql](select/leetcode584.sql)
+5. [select/leetcode595.sql](select/leetcode595.sql)
 
 ### basics join/
-- [basics join/leetcode1068.sql](basics%20join/leetcode1068.sql)
-- [basics join/leetcode1280.sql](basics%20join/leetcode1280.sql)
-- [basics join/leetcode1378.sql](basics%20join/leetcode1378.sql)
-- [basics join/leetcode1581.sql](basics%20join/leetcode1581.sql)
-- [basics join/leetcode1661.sql](basics%20join/leetcode1661.sql)
-- [basics join/leetcode1934.sql](basics%20join/leetcode1934.sql)
-- [basics join/leetcode197.sql](basics%20join/leetcode197.sql)
-- [basics join/leetcode570.sql](basics%20join/leetcode570.sql)
-- [basics join/leetcode577.sql](basics%20join/leetcode577.sql)
+1. [basics join/leetcode1068.sql](basics%20join/leetcode1068.sql)
+2. [basics join/leetcode1280.sql](basics%20join/leetcode1280.sql)
+3. [basics join/leetcode1378.sql](basics%20join/leetcode1378.sql)
+4. [basics join/leetcode1581.sql](basics%20join/leetcode1581.sql)
+5. [basics join/leetcode1661.sql](basics%20join/leetcode1661.sql)
+6. [basics join/leetcode1934.sql](basics%20join/leetcode1934.sql)
+7. [basics join/leetcode197.sql](basics%20join/leetcode197.sql)
+8. [basics join/leetcode570.sql](basics%20join/leetcode570.sql)
+9. [basics join/leetcode577.sql](basics%20join/leetcode577.sql)
 
 ### Basic Aggregate Functions/
-- [Basic Aggregate Functions/leetcode1075.sql](Basic%20Aggregate%20Functions/leetcode1075.sql)
-- [Basic Aggregate Functions/leetcode1174.sql](Basic%20Aggregate%20Functions/leetcode1174.sql)
-- [Basic Aggregate Functions/leetcode1193.sql](Basic%20Aggregate%20Functions/leetcode1193.sql)
-- [Basic Aggregate Functions/leetcode1211.sql](Basic%20Aggregate%20Functions/leetcode1211.sql)
-- [Basic Aggregate Functions/leetcode1633.sql](Basic%20Aggregate%20Functions/leetcode1633.sql)
-- [Basic Aggregate Functions/leetcode550.sql](Basic%20Aggregate%20Functions/leetcode550.sql)
-- [Basic Aggregate Functions/leetcode620.sql](Basic%20Aggregate%20Functions/leetcode620.sql)
+1. [Basic Aggregate Functions/leetcode1075.sql](Basic%20Aggregate%20Functions/leetcode1075.sql)
+2. [Basic Aggregate Functions/leetcode1251.sql](Basic%20Aggregate%20Functions/leetcode1251.sql)
+3. [Basic Aggregate Functions/leetcode1174.sql](Basic%20Aggregate%20Functions/leetcode1174.sql)
+4. [Basic Aggregate Functions/leetcode1193.sql](Basic%20Aggregate%20Functions/leetcode1193.sql)
+5. [Basic Aggregate Functions/leetcode1211.sql](Basic%20Aggregate%20Functions/leetcode1211.sql)
+6. [Basic Aggregate Functions/leetcode1633.sql](Basic%20Aggregate%20Functions/leetcode1633.sql)
+7. [Basic Aggregate Functions/leetcode550.sql](Basic%20Aggregate%20Functions/leetcode550.sql)
+8. [Basic Aggregate Functions/leetcode620.sql](Basic%20Aggregate%20Functions/leetcode620.sql)
 
 ### Sorting and Grouping/
-- [Sorting and Grouping/leetcode1045.sql](Sorting%20and%20Grouping/leetcode1045.sql)
-- [Sorting and Grouping/leetcode1070.sql](Sorting%20and%20Grouping/leetcode1070.sql)
-- [Sorting and Grouping/leetcode1141.sql](Sorting%20and%20Grouping/leetcode1141.sql)
-- [Sorting and Grouping/leetcode1729.sql](Sorting%20and%20Grouping/leetcode1729.sql)
-- [Sorting and Grouping/leetcode2356.sql](Sorting%20and%20Grouping/leetcode2356.sql)
-- [Sorting and Grouping/leetcode596.sql](Sorting%20and%20Grouping/leetcode596.sql)
-- [Sorting and Grouping/leetcode619.sql](Sorting%20and%20Grouping/leetcode619.sql)
+1. [Sorting and Grouping/leetcode1045.sql](Sorting%20and%20Grouping/leetcode1045.sql)
+2. [Sorting and Grouping/leetcode1070.sql](Sorting%20and%20Grouping/leetcode1070.sql)
+3. [Sorting and Grouping/leetcode1141.sql](Sorting%20and%20Grouping/leetcode1141.sql)
+4. [Sorting and Grouping/leetcode1729.sql](Sorting%20and%20Grouping/leetcode1729.sql)
+5. [Sorting and Grouping/leetcode2356.sql](Sorting%20and%20Grouping/leetcode2356.sql)
+6. [Sorting and Grouping/leetcode596.sql](Sorting%20and%20Grouping/leetcode596.sql)
+7. [Sorting and Grouping/leetcode619.sql](Sorting%20and%20Grouping/leetcode619.sql)
 
 ### Advanced Select and Joins/
-- [Advanced Select and Joins/leetcode 1164.sql](Advanced%20Select%20and%20Joins/leetcode%201164.sql)
-- [Advanced Select and Joins/leetcode 1204.sql](Advanced%20Select%20and%20Joins/leetcode%201204.sql)
-- [Advanced Select and Joins/leetcode 1731.sql](Advanced%20Select%20and%20Joins/leetcode%201731.sql)
-- [Advanced Select and Joins/leetcode 1789.sql](Advanced%20Select%20and%20Joins/leetcode%201789.sql)
-- [Advanced Select and Joins/leetcode 180.sql](Advanced%20Select%20and%20Joins/leetcode%20180.sql)
-- [Advanced Select and Joins/leetcode 1907.sql](Advanced%20Select%20and%20Joins/leetcode%201907.sql)
-- [Advanced Select and Joins/leetcode 610.sql](Advanced%20Select%20and%20Joins/leetcode%20610.sql)
+1. [Advanced Select and Joins/leetcode 1164.sql](Advanced%20Select%20and%20Joins/leetcode%201164.sql)
+2. [Advanced Select and Joins/leetcode 1204.sql](Advanced%20Select%20and%20Joins/leetcode%201204.sql)
+3. [Advanced Select and Joins/leetcode 1731.sql](Advanced%20Select%20and%20Joins/leetcode%201731.sql)
+4. [Advanced Select and Joins/leetcode 1789.sql](Advanced%20Select%20and%20Joins/leetcode%201789.sql)
+5. [Advanced Select and Joins/leetcode 180.sql](Advanced%20Select%20and%20Joins/leetcode%20180.sql)
+6. [Advanced Select and Joins/leetcode 1907.sql](Advanced%20Select%20and%20Joins/leetcode%201907.sql)
+7. [Advanced Select and Joins/leetcode 610.sql](Advanced%20Select%20and%20Joins/leetcode%20610.sql)
 
 ### Subqueries/
-- [Subqueries/leetcode1978.sql](Subqueries/leetcode1978.sql)
-- [Subqueries/leetcode626.sql](Subqueries/leetcode626.sql)
+1. [Subqueries/leetcode1978.sql](Subqueries/leetcode1978.sql)
+2. [Subqueries/leetcode626.sql](Subqueries/leetcode626.sql)
 
 ## Conventions and Dialect Notes
 
