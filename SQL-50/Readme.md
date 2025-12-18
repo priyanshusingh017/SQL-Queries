@@ -99,6 +99,9 @@ Tips:
 ### Subqueries/
 1. [Subqueries/leetcode1978.sql](Subqueries/leetcode1978.sql)
 2. [Subqueries/leetcode626.sql](Subqueries/leetcode626.sql)
+3. [Subqueries/leetcode1321.sql](Subqueries/leetcode1321.sql)
+4. [Subqueries/leetcode1341.sql](Subqueries/leetcode1341.sql)
+5. [Subqueries/leetcode602.sql](Subqueries/leetcode602.sql)
 
 ## Conventions and Dialect Notes
 
