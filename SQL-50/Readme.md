@@ -17,11 +17,12 @@ Curated SQL exercises organized by topic and difficulty, inspired by popular SQL
 - Dialects: Examples primarily use MySQL-style syntax; minor adjustments may be needed for PostgreSQL, SQL Server, or SQLite.
 
 ## Folder Structure
-- `select/` — Foundational selection and filtering queries
-- `basics join/` — Inner/left/right joins and basic multi-table queries
+- `Select/` — Foundational selection and filtering queries
+- `Basics Join/` — Inner/left/right joins and basic multi-table queries
 - `Basic Aggregate Functions/` — `COUNT`, `SUM`, `AVG`, `MIN`, `MAX`, `GROUP BY`, `HAVING`
 - `Sorting and Grouping/` — Ordering, grouping patterns, and rollups
 - `Advanced Select and Joins/` — Window functions and complex join scenarios
+- `Advanced String Functions_Regex_Clause/` — String ops, regex, and related clauses
 - `Subqueries/` — Scalar, correlated, and `IN/EXISTS` subqueries
 
 ## How to Run
@@ -50,23 +51,23 @@ Tips:
 
 ## Problem Sets by Topic
 
-### select/
-1. [select/leetcode1148.sql](select/leetcode1148.sql)
-2. [select/leetcode1683.sql](select/leetcode1683.sql)
-3. [select/leetcode1757.sql](select/leetcode1757.sql)
-4. [select/leetcode584.sql](select/leetcode584.sql)
-5. [select/leetcode595.sql](select/leetcode595.sql)
+### Select/
+1. [Select/leetcode1148.sql](Select/leetcode1148.sql)
+2. [Select/leetcode1683.sql](Select/leetcode1683.sql)
+3. [Select/leetcode1757.sql](Select/leetcode1757.sql)
+4. [Select/leetcode584.sql](Select/leetcode584.sql)
+5. [Select/leetcode595.sql](Select/leetcode595.sql)
 
-### basics join/
-1. [basics join/leetcode1068.sql](basics%20join/leetcode1068.sql)
-2. [basics join/leetcode1280.sql](basics%20join/leetcode1280.sql)
-3. [basics join/leetcode1378.sql](basics%20join/leetcode1378.sql)
-4. [basics join/leetcode1581.sql](basics%20join/leetcode1581.sql)
-5. [basics join/leetcode1661.sql](basics%20join/leetcode1661.sql)
-6. [basics join/leetcode1934.sql](basics%20join/leetcode1934.sql)
-7. [basics join/leetcode197.sql](basics%20join/leetcode197.sql)
-8. [basics join/leetcode570.sql](basics%20join/leetcode570.sql)
-9. [basics join/leetcode577.sql](basics%20join/leetcode577.sql)
+### Basics Join/
+1. [Basics Join/leetcode1068.sql](Basics%20Join/leetcode1068.sql)
+2. [Basics Join/leetcode1280.sql](Basics%20Join/leetcode1280.sql)
+3. [Basics Join/leetcode1378.sql](Basics%20Join/leetcode1378.sql)
+4. [Basics Join/leetcode1581.sql](Basics%20Join/leetcode1581.sql)
+5. [Basics Join/leetcode1661.sql](Basics%20Join/leetcode1661.sql)
+6. [Basics Join/leetcode1934.sql](Basics%20Join/leetcode1934.sql)
+7. [Basics Join/leetcode197.sql](Basics%20Join/leetcode197.sql)
+8. [Basics Join/leetcode570.sql](Basics%20Join/leetcode570.sql)
+9. [Basics Join/leetcode577.sql](Basics%20Join/leetcode577.sql)
 
 ### Basic Aggregate Functions/
 1. [Basic Aggregate Functions/leetcode1075.sql](Basic%20Aggregate%20Functions/leetcode1075.sql)
@@ -96,12 +97,23 @@ Tips:
 6. [Advanced Select and Joins/leetcode 1907.sql](Advanced%20Select%20and%20Joins/leetcode%201907.sql)
 7. [Advanced Select and Joins/leetcode 610.sql](Advanced%20Select%20and%20Joins/leetcode%20610.sql)
 
+### Advanced String Functions_Regex_Clause/
+1. [Advanced String Functions_Regex_Clause/leetcode1327.sql](Advanced%20String%20Functions_Regex_Clause/leetcode1327.sql)
+2. [Advanced String Functions_Regex_Clause/leetcode1484.sql](Advanced%20String%20Functions_Regex_Clause/leetcode1484.sql)
+3. [Advanced String Functions_Regex_Clause/leetcode1517.sql](Advanced%20String%20Functions_Regex_Clause/leetcode1517.sql)
+4. [Advanced String Functions_Regex_Clause/leetcode1527.sql](Advanced%20String%20Functions_Regex_Clause/leetcode1527.sql)
+5. [Advanced String Functions_Regex_Clause/leetcode1667.sql](Advanced%20String%20Functions_Regex_Clause/leetcode1667.sql)
+6. [Advanced String Functions_Regex_Clause/leetcode176.sql](Advanced%20String%20Functions_Regex_Clause/leetcode176.sql)
+7. [Advanced String Functions_Regex_Clause/leetcode196.sql](Advanced%20String%20Functions_Regex_Clause/leetcode196.sql)
+
 ### Subqueries/
 1. [Subqueries/leetcode1978.sql](Subqueries/leetcode1978.sql)
 2. [Subqueries/leetcode626.sql](Subqueries/leetcode626.sql)
 3. [Subqueries/leetcode1321.sql](Subqueries/leetcode1321.sql)
 4. [Subqueries/leetcode1341.sql](Subqueries/leetcode1341.sql)
 5. [Subqueries/leetcode602.sql](Subqueries/leetcode602.sql)
+6. [Subqueries/leetcode185.sql](Subqueries/leetcode185.sql)
+7. [Subqueries/leetcode585.sql](Subqueries/leetcode585.sql)
 
 ## Conventions and Dialect Notes
 

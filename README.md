@@ -25,11 +25,12 @@ Practice-ready SQL queries from beginner to advanced—covering selects, joins, 
 ## Repository Structure
 - [Org database in SQL/](Org%20database%20in%20SQL) — Organization-themed SQL scripts
 - [SQL-50/](SQL-50) — Topic-wise solutions inspired by “SQL 50” practice sets
-   - [SQL-50/select](SQL-50/select)
-   - [SQL-50/basics join](SQL-50/basics%20join)
+   - [SQL-50/Select](SQL-50/Select)
+   - [SQL-50/Basics Join](SQL-50/Basics%20Join)
    - [SQL-50/Basic Aggregate Functions](SQL-50/Basic%20Aggregate%20Functions)
    - [SQL-50/Sorting and Grouping](SQL-50/Sorting%20and%20Grouping)
    - [SQL-50/Advanced Select and Joins](SQL-50/Advanced%20Select%20and%20Joins)
+   - [SQL-50/Advanced String Functions_Regex_Clause](SQL-50/Advanced%20String%20Functions_Regex_Clause)
    - [SQL-50/Subqueries](SQL-50/Subqueries)
 
 > Note: Scripts target common SQL dialects. Most examples follow MySQL-style syntax; minor adjustments may be required for PostgreSQL, SQL Server, or SQLite (e.g., `LIMIT` vs `TOP`, date formatting functions, string functions).
